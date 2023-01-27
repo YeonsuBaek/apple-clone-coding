@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-[#cecece] font-['SF_Pro_Display'];
+  }
+
+  h2 {
+    @apply text-5xl leading-[1.0834933333] font-semibold tracking-[-0.003em];
+  }
+
+  strong {
+    @apply block w-[280px] text-transparent bg-clip-text bg-[length:100%_300%] bg-[50%_0] overflow-hidden text-[28px] leading-[1.1428571429] font-semibold tracking-[0.007em];
+  }
+}
+
+@layer components {
+  .button {
+    @apply bg-[#0071e3] text-white rounded-[980px] cursor-pointer inline-block whitespace-nowrap;
+  }
+
+  .hidden {
+    @apply absolute w-[1px] h-[1px] p-0 m-[-1px] overflow-hidden whitespace-nowrap border-0;
+    clip: rect(0, 0, 0, 0) !important;
+  }
+
+  .focus {
+    @apply transition-opacity opacity-80 hover:opacity-100 hover:transition-opacity hover:transition active:opacity-100 active:transition-opacity active:transition;
+  }
+}
