@@ -1,15 +1,16 @@
-const plugin = require("tailwindcss/plugin");
+const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  mode: 'jit',
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {},
   },
   plugins: [
     plugin(function ({ addUtilities }) {
       addUtilities({
-        ".gradient": {
+        '.gradient': {
           backgroundImage: `linear-gradient(
               180deg,
               #ffb6ff,
@@ -21,7 +22,7 @@ module.exports = {
               #b344ff
             )`,
         },
-        ".transition": "duration-200 ease-in-out",
+        '.transition': 'duration-200 ease-in-out',
       });
     }),
   ],
