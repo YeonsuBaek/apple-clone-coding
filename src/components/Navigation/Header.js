@@ -99,7 +99,7 @@ function Header() {
               href='/'
               className={
                 toggleSidebar
-                  ? "translate-y-1/4 opacity-0 focus block w-[17px] h-full bg-[length:17px_48px] lg:bg-[length:15px_44px] bg-no-repeat bg-[url('https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_small.svg')] ease-in duration-200 transition-all"
+                  ? "translate-y-[10%] opacity-0 focus block w-[17px] h-full bg-[length:17px_48px] lg:bg-[length:15px_44px] bg-no-repeat bg-[url('https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_small.svg')] ease-in duration-200 transition-all"
                   : "translate-y-0 focus block w-[17px] h-full bg-[length:17px_48px] lg:bg-[length:15px_44px] bg-no-repeat bg-[url('https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_small.svg')] ease-in duration-200 transition-translate"
               }
             >
