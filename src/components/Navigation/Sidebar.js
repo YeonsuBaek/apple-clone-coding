@@ -22,9 +22,14 @@ const Sidebar = (props) => {
 
       <div className='px-10'>
         <ul className='max-w-[584px] mx-auto my-0'>
-          {props.navList.map((item) => {
+          {props.navList.map((item, i) => {
             return (
-              <li className='h-11 text-[17px] border-b border-[#424245]' key={Math.random()}>
+              <li
+                className={
+                  i < props.navList.length - 1 ? 'h-11 text-[17px] border-b border-[#424245]' : 'h-11 text-[17px]'
+                }
+                key={Math.random()}
+              >
                 <a
                   href={item.href}
                   className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'
