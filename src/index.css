@@ -18,7 +18,7 @@
 
 @layer components {
   .button {
-    @apply bg-[#0071e3] text-white rounded-[980px] cursor-pointer inline-block whitespace-nowrap;
+    @apply bg-[#0071e3] text-white rounded-[980px] cursor-pointer inline-block whitespace-nowrap hover:bg-[#147ce5] active:bg-[#147ce5];
   }
 
   .focus {
