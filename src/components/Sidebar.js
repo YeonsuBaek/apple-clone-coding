@@ -5,8 +5,8 @@ const Sidebar = (props) => {
     <aside
       className={
         props.toggle
-          ? 'absolute top-12 left-0 w-screen h-[calc(100vh-48px)] bg-black ease-in duration-500 opacity-100'
-          : 'overflow-y-hidden lg:visibility-hidden ease-in duration-300 h-0 opacity-0'
+          ? ' lg:visibility-hidden absolute top-12 left-0 w-screen h-[calc(100vh-48px)] bg-black ease-in duration-500 opacity-100'
+          : 'overflow-y-hidden ease-in duration-300 h-0 opacity-0'
       }
     >
       <div className='mb-1 px-2.5 h-[53px] w-full flex items-start justify-center border-b border-[#424245]'>
