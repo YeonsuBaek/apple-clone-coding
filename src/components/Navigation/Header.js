@@ -2,6 +2,49 @@ import React, { useState } from 'react';
 import GlobalNav from './GlobalNav';
 import Sidebar from './Sidebar';
 
+const GlobalNavList = [
+  {
+    href: '/',
+    title: 'Store',
+  },
+  {
+    href: '/',
+    title: 'Mac',
+  },
+  {
+    href: '/',
+    title: 'iPad',
+  },
+  {
+    href: '/',
+    title: 'iPhone',
+  },
+  {
+    href: '/',
+    title: 'Watch',
+  },
+  {
+    href: '/',
+    title: 'AirPods',
+  },
+  {
+    href: '/',
+    title: 'TV & HOME',
+  },
+  {
+    href: '/',
+    title: 'Only on Apple',
+  },
+  {
+    href: '/',
+    title: 'Accessories',
+  },
+  {
+    href: '/',
+    title: 'Support',
+  },
+];
+
 function Header() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
 
@@ -42,7 +85,7 @@ function Header() {
               <span className='hidden'>Apple</span>
             </a>
           </li>
-          <GlobalNav />
+          <GlobalNav navList={GlobalNavList} />
           <li className='flex items-center justify-center w-12 h-full text-center'>
             <a
               href='/'
@@ -58,7 +101,7 @@ function Header() {
         </ul>
       </nav>
 
-      <Sidebar toggle={toggleSidebar} />
+      <Sidebar navList={GlobalNavList} toggle={toggleSidebar} />
     </>
   );
 }

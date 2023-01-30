@@ -22,59 +22,18 @@ const Sidebar = (props) => {
 
       <div className='px-10'>
         <ul className='max-w-[584px] mx-auto my-0'>
-          <li className='h-11 text-[17px] border-b border-[#424245]'>
-            <a href='/' className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'>
-              Store
-            </a>
-          </li>
-          <li className='h-11 text-[17px] border-b border-[#424245]'>
-            <a href='/' className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'>
-              Mac
-            </a>
-          </li>{' '}
-          <li className='h-11 text-[17px] border-b border-[#424245]'>
-            <a href='/' className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'>
-              iPad
-            </a>
-          </li>
-          <li className='h-11 text-[17px] border-b border-[#424245]'>
-            <a href='/' className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'>
-              iPhone
-            </a>
-          </li>
-          <li className='h-11 text-[17px] border-b border-[#424245]'>
-            <a href='/' className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'>
-              Watch
-            </a>
-          </li>{' '}
-          <li className='h-11 text-[17px] border-b border-[#424245]'>
-            <a href='/' className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'>
-              AirPods
-            </a>
-          </li>{' '}
-          <li className='h-11 text-[17px] border-b border-[#424245]'>
-            <a href='/' className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'>
-              TV & Home
-            </a>
-          </li>
-          <li className='h-11 text-[17px] border-b border-[#424245]'>
-            <a href='/' className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'>
-              Only on Apple
-            </a>
-          </li>{' '}
-          <li className='h-11 text-[17px] border-b border-[#424245]'>
-            <a href='/' className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'>
-              Accessories
-            </a>
-          </li>{' '}
-          <li className='h-11 text-[17px]'>
-            <a
-              href='/'
-              className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus text-normal'
-            >
-              Support
-            </a>
-          </li>
+          {props.navList.map((item) => {
+            return (
+              <li className='h-11 text-[17px] border-b border-[#424245]' key={Math.random()}>
+                <a
+                  href={item.href}
+                  className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'
+                >
+                  {item.title}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </aside>
