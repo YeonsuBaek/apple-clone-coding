@@ -5,7 +5,23 @@ module.exports = {
   mode: 'jit',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        fadeout: {
+          '0%': {
+            opacity: '100%',
+            transform: 'scale(1)',
+          },
+          '100%': {
+            opacity: '0%',
+            transform: 'scale(1.1)',
+          },
+        },
+      },
+      animation: {
+        fadeiout: 'fadeout 300ms 400ms ease-out forwards',
+      },
+    },
   },
   plugins: [
     plugin(function ({ addUtilities }) {
