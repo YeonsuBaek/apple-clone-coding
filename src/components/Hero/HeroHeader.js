@@ -10,7 +10,7 @@ const HeroHeader = () => {
   };
 
   return (
-    <div className='relative md:h-[794px]'>
+    <div className='relative mb-[96px] md:h-[794px]'>
       <h1 className='mt-[59px] mb-[52px] w-full md:mt-[124px] md:mb-[111px] md:absolute md:opacity-0 md:animate-[fadeout_300ms_400ms_ease-out_forwards] lg:mt-[119px] lg:mb-[106px]'>
         <span className='min-[0px]:visibility-hidden'>iPhone 14 Pro and iPhone 14 Pro Max</span>
         <div className='w-[310px] h-[91px] mx-auto my-0 md:w-[539px] md:h-[158px] lg:w-[700px] lg:h-[204px]'>
