@@ -23,7 +23,7 @@ const devices = [
 
 const ColorsDevice = (props) => {
   return (
-    <ul className='relative w-[242px] mx-auto my-0'>
+    <ul className='relative w-[242px] h-[598px] mx-auto my-0'>
       {devices.map((device) => {
         return (
           <li className='absolute top-0 left-0 z-0' key={device.color}>
