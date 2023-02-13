@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ColorsDevice from './ColorsDevice';
 
 const Colors = () => {
   const [color, setColor] = useState('Deep Purple');
@@ -24,36 +25,7 @@ const Colors = () => {
           <button onClick={() => handleChangeColor('Space Black')}>Space Black</button>
         </li>
       </ul>
-      <ul className='relative w-[242px] mx-auto my-0'>
-        <li className='absolute top-0 left-0 z-0'>
-          <img
-            src='https://www.apple.com/v/iphone-14-pro/c/images/overview/colors/gallery_deep_purple__du23dbfjl1km_small_2x.jpg'
-            alt='Deep Purple'
-            className={color === 'Deep Purple' ? `opacity-100 ease-in duration-200` : `opacity-0 ease-in duration-300`}
-          />
-        </li>
-        <li className='absolute top-0 left-0 z-0'>
-          <img
-            src='https://www.apple.com/v/iphone-14-pro/c/images/overview/colors/gallery_gold__e2kfk9zl5eie_small_2x.jpg'
-            alt='Gold'
-            className={color === 'Gold' ? `opacity-100 ease-in duration-200` : `opacity-0 ease-in duration-300`}
-          />
-        </li>
-        <li className='absolute top-0 left-0 z-0'>
-          <img
-            src='https://www.apple.com/v/iphone-14-pro/c/images/overview/colors/gallery_silver__eph35go3eiy6_small_2x.jpg'
-            alt='Silver'
-            className={color === 'Silver' ? `opacity-100 ease-in duration-200` : `opacity-0 ease-in duration-300`}
-          />
-        </li>
-        <li className='absolute top-0 left-0 z-0'>
-          <img
-            src='https://www.apple.com/v/iphone-14-pro/c/images/overview/colors/gallery_space_black__ev5ncqabz7ma_small_2x.jpg'
-            alt='Space Black'
-            className={color === 'Space Black' ? `opacity-100 ease-in duration-200` : `opacity-0 ease-in duration-300`}
-          />
-        </li>
-      </ul>
+      <ColorsDevice color={color} />
     </div>
   );
 };
