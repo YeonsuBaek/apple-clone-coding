@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ColorsDevice from './ColorsDevice';
+import ColorsPrivacy from './ColorsPrivacy';
 
 const Colors = () => {
   const [color, setColor] = useState('Deep Purple');
@@ -9,9 +10,9 @@ const Colors = () => {
   };
 
   return (
-    <div className='relative z-20 w-[87.5%] mx-auto my-2'>
+    <div className='relative z-20 w-[87.5%] mx-auto my-2 pb-[86px] md:pb-[103px] lg:pb-[135px]'>
       <h2 className='min-[0px]:visibility-hidden'>Colors</h2>
-      <div className='md:flex md:flex-row-reverse md:items-start md:justify-center md:mb-24 lg:mb-[72px]'>
+      <div className='mb-[39px] md:flex md:flex-row-reverse md:items-start md:justify-center md:mb-24 lg:mb-[72px]'>
         <ul className='ml-[8.3%] mb-11 text-[19px] font-semibold md:mx-0 lg:text-[21px] md:mt-60 lg:mt-80'>
           <li className={color === 'Deep Purple' ? `text-[#cecece] mb-4 lg:mb-5` : `text-[#424245] mb-4 lg:mb-5`}>
             <button onClick={() => handleChangeColor('Deep Purple')}>Deep Purple</button>
@@ -28,6 +29,7 @@ const Colors = () => {
         </ul>
         <ColorsDevice color={color} />
       </div>
+      <ColorsPrivacy />
     </div>
   );
 };
