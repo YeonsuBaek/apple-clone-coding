@@ -12,22 +12,16 @@ const LocalNav = () => {
       className={
         toggleLocalbar
           ? 'max-h-52 px-4 border-b border-[#424245] bg-zinc-900 ease-in-out duration-500 transition-all lg:max-w-screen-lg lg:mx-auto lg:my-0 lg:max-h-13 lg:bg-transparent lg:px-0'
-          : 'max-h-12 px-4 border-b border-[#424245] bg-transparent ease-in-out duration-300 delay-500 transition-all lg:max-w-screen-lg lg:mx-auto lg:my-0 lg:px-0 lg:max-h-13'
+          : 'max-h-12 px-4 border-b border-[#424245] bg-transparent ease-in-out duration-300 delay-500 transition-all lg:max-w-screen-lg lg:mx-auto lg:my-0 lg:px-[22px] lg:max-h-13'
       }
     >
       <div className='flex items-center justify-between h-12'>
-        <a
-          href='/'
-          className='text-white text-[19px] text-bold tracking-[0.228px]'
-        >
+        <a href='/' className='text-white text-[19px] text-bold tracking-[0.228px]'>
           iPhone 14 Pro
         </a>
 
         <div className='flex items-center justify-between'>
-          <button
-            className='relative w-10 h-8 focus lg:visibility-hidden'
-            onClick={handleToggleLacalbar}
-          >
+          <button className='relative w-10 h-8 focus lg:visibility-hidden' onClick={handleToggleLacalbar}>
             <span
               className={
                 toggleLocalbar
@@ -46,10 +40,7 @@ const LocalNav = () => {
 
           <ul className='flex max-[1023px]:visibility-hidden'>
             <li className='mr-6 opacity-60'>
-              <a
-                className='text-xs font-["SF_Pro_Text"] text-white cursor-default'
-                href='/'
-              >
+              <a className='text-xs font-["SF_Pro_Text"] text-white cursor-default' href='/'>
                 Overview
               </a>
             </li>

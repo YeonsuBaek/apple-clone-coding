@@ -29,7 +29,7 @@ const GlobalNavList = [
   },
   {
     href: '/',
-    title: 'TV & HOME',
+    title: 'TV & Home',
   },
   {
     href: '/',
@@ -55,7 +55,7 @@ function Header() {
   return (
     <>
       <nav className='w-full h-full bg-[#161617cc]/80 flex items-center justify-between lg:block lg:px-[22px]'>
-        <ul className='flex items-center justify-between w-full h-12 reletive lg:max-w-screen-lg lg:h-11 lg:my-0 lg:mx-auto'>
+        <ul className='flex items-center justify-between w-full h-12 reletive lg:max-w-screen-lg lg:h-11 lg:my-0 lg:mx-auto lg:px-[22px]'>
           <li className='flex items-center justify-center w-12 h-full text-center lg:visibility-hidden'>
             <button onClick={handleToggleSidebar} className='w-full h-full focus display'>
               <label className='relative block w-full h-full'>
@@ -77,7 +77,7 @@ function Header() {
               <span className='hidden'>Global Navigation</span>
             </button>
           </li>
-          <li className='flex items-center justify-center w-12 h-full text-center'>
+          <li className='flex items-center justify-center h-full px-4 text-center lg:px-[9px]'>
             <a
               href='/'
               className="focus block w-[17px] h-full bg-[length:17px_48px] lg:bg-[length:15px_44px] bg-no-repeat bg-[url('https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_small.svg')]"
@@ -86,7 +86,7 @@ function Header() {
             </a>
           </li>
           <GlobalNav navList={GlobalNavList} />
-          <li className='max-[1023px]:visibility-hidden h-full px-2'>
+          <li className='max-[1023px]:visibility-hidden h-full px-[9px]'>
             <a
               href='/'
               className="focus block w-[15px] h-full bg-[length:15px_88px] bg-no-repeat bg-[url('https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_large.svg')]"
@@ -94,7 +94,7 @@ function Header() {
               <span className='hidden'>Search</span>
             </a>
           </li>
-          <li className='flex items-center justify-center w-12 h-full text-center'>
+          <li className='flex items-center justify-center h-full text-center px-4 lg:px-[9px]'>
             <a
               href='/'
               className={
