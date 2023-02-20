@@ -54,7 +54,13 @@ function Header() {
 
   return (
     <>
-      <nav className='w-full h-full bg-[#161617cc]/80 flex items-center justify-between lg:block lg:px-[22px]'>
+      <nav
+        className={
+          toggleSidebar
+            ? `w-full h-full bg-transparent flex items-center justify-between lg:block lg:px-[22px]`
+            : `w-full h-full bg-[#161617cc]/80 flex items-center justify-between lg:block lg:px-[22px]`
+        }
+      >
         <ul className='flex items-center justify-between w-full h-12 reletive lg:max-w-screen-lg lg:h-11 lg:my-0 lg:mx-auto lg:px-[22px]'>
           <li className='flex items-center justify-center w-12 h-full text-center lg:visibility-hidden'>
             <button onClick={handleToggleSidebar} className='w-full h-full focus display'>
