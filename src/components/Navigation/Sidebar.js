@@ -15,7 +15,7 @@ const Sidebar = (props) => {
           <input
             type='text'
             placeholder='Search apple.com'
-            className="pl-[30px] rounded-lg w-full block h-9 bg-[#1d1d1f] outline-0 text-[17px] placeholder:font-['SF_Pro_Text'] leading-[1.23536] tracking-[0.022em] placeholder:text-[#6e6e73]"
+            className='pl-[30px] rounded-lg w-full block h-9 bg-[#1d1d1f] outline-0 text-[17px] leading-[1.23536] tracking-[0.022em] placeholder:text-[#6e6e73]'
           />
         </form>
       </div>
@@ -30,10 +30,7 @@ const Sidebar = (props) => {
                 }
                 key={Math.random()}
               >
-                <a
-                  href={item.href}
-                  className='flex items-center w-full h-full font-["SF_Pro_Text"] text-[#f5f5f7] focus'
-                >
+                <a href={item.href} className='flex items-center w-full h-full text-[#f5f5f7] focus'>
                   {item.title}
                 </a>
               </li>

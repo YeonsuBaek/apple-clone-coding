@@ -4,7 +4,7 @@ const HeroIntroduction = () => {
   return (
     <div className='overflow-visible pb-[400px] md:pb-[450px] lg:pd-[500px]'>
       <div className='relative w-full h-[1800px] md:h-[1808px] lg:h-[1810px]'>
-        <p className='w-[324px] mx-auto my-0 sticky top-0 translate-y-[calc(50vh-50%+48px*0.5)] text-[28px] font-bold leading-[1.1] tracking-[0.19px] md:w-[609px] md:text-[40px] lg:w-[823px] lg:text-[56px]'>
+        <p className='w-[324px] mx-auto my-0 sticky top-0 translate-y-[calc(50vh-50%+48px*0.5)] text-[28px] font-semibold leading-[1.1] tracking-[0.19px] md:w-[609px] md:text-[40px] lg:w-[823px] lg:text-[56px]'>
           A magical new way to interact with iPhone. Groundbreaking safety features designed to save lives. An
           innovative 48MP camera for mind-blowing detail. All powered by the ultimate smartphone chip.
         </p>

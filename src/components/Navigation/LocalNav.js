@@ -40,23 +40,17 @@ const LocalNav = () => {
 
           <ul className='flex max-[1023px]:visibility-hidden'>
             <li className='mr-6 opacity-60'>
-              <a className='text-xs font-["SF_Pro_Text"] text-white cursor-default' href='/'>
+              <a className='text-xs text-white cursor-default' href='/'>
                 Overview
               </a>
             </li>
             <li className='mr-6 opacity-90'>
-              <a
-                className='text-xs font-["SF_Pro_Text"] text-white hover:text-[#2997ff] active:text-[#2997ff]'
-                href='/'
-              >
+              <a className='text-xs text-white hover:text-[#2997ff] active:text-[#2997ff]' href='/'>
                 Switching to iPhone
               </a>
             </li>
             <li className='mr-6 opacity-90'>
-              <a
-                className='text-xs font-["SF_Pro_Text"] text-white hover:text-[#2997ff] active:text-[#2997ff]'
-                href='/'
-              >
+              <a className='text-xs text-white hover:text-[#2997ff] active:text-[#2997ff]' href='/'>
                 Tech Specs
               </a>
             </li>
@@ -77,16 +71,13 @@ const LocalNav = () => {
       >
         <ul className='px-6 pt-1 pb-4'>
           <li className='w-full mr-6 opacity-60 border-b border-[#424245]'>
-            <a
-              className='flex items-center justify-start h-11 text-sm font-["SF_Pro_Text"] text-white cursor-default'
-              href='/'
-            >
+            <a className='flex items-center justify-start text-sm text-white cursor-default h-11' href='/'>
               Overview
             </a>
           </li>
           <li className='w-full mr-6 opacity-90 border-b border-[#424245]'>
             <a
-              className='flex items-center justify-start h-11 text-sm font-["SF_Pro_Text"] text-white hover:text-[#2997ff] active:text-[#2997ff]'
+              className='flex items-center justify-start h-11 text-sm text-white hover:text-[#2997ff] active:text-[#2997ff]'
               href='/'
             >
               Switching to iPhone
@@ -94,7 +85,7 @@ const LocalNav = () => {
           </li>
           <li className='w-full mr-6 opacity-90'>
             <a
-              className='flex items-center justify-start h-11 text-sm font-["SF_Pro_Text"] text-white hover:text-[#2997ff] active:text-[#2997ff]'
+              className='flex items-center justify-start h-11 text-sm text-white hover:text-[#2997ff] active:text-[#2997ff]'
               href='/'
             >
               Tech Specs
