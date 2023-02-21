@@ -11,11 +11,11 @@ const LocalNav = () => {
     <nav
       className={
         toggleLocalbar
-          ? 'z-40 sticky top-0 left-0 w-full max-h-52 px-4 border-b border-[#424245] bg-zinc-900 ease-in-out duration-500 transition-all lg:max-w-screen-lg lg:mx-auto lg:my-0 lg:max-h-[52px] lg:bg-transparent lg:px-0'
-          : 'z-40 sticky top-0 left-0 w-full max-h-12 px-4 border-b border-[#424245] bg-black ease-in-out duration-300 delay-500 transition-all lg:max-w-screen-lg lg:mx-auto lg:my-0 lg:px-[22px] lg:max-h-[52px]'
+          ? 'z-40 sticky top-0 left-0 w-full max-h-52 border-b border-[#424245] bg-zinc-900 ease-in-out duration-500 transition-all lg:max-h-[52px] lg:bg-transparent lg:px-0'
+          : 'z-40 sticky top-0 left-0 w-full max-h-12 border-b border-[#424245] bg-black ease-in-out duration-300 delay-500 transition-all lg:max-h-[52px]'
       }
     >
-      <div className='flex items-center justify-between h-12 lg:h-[52px]'>
+      <div className='px-4 flex items-center justify-between w-full h-12 lg:max-w-screen-lg lg:h-[52px] lg:px-[22px] lg:mx-auto lg:my-0 '>
         <a href='/' className='text-white text-[19px] text-bold tracking-[0.228px]'>
           iPhone 14 Pro
         </a>
