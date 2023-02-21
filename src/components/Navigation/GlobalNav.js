@@ -1,9 +1,10 @@
 import React from 'react';
+import GlobalNavList from './GlobalNavList';
 
-function GlobalNav(props) {
+function GlobalNav() {
   return (
     <>
-      {props.navList.map((item) => {
+      {GlobalNavList.map((item) => {
         return (
           <li className='max-[1023px]:visibility-hidden h-full' key={Math.random()}>
             <a

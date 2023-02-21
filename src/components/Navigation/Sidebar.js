@@ -1,4 +1,5 @@
 import React from 'react';
+import GlobalNavList from './GlobalNavList';
 
 const Sidebar = (props) => {
   return (
@@ -22,11 +23,11 @@ const Sidebar = (props) => {
 
       <div className='px-10'>
         <ul className='max-w-[584px] mx-auto my-0'>
-          {props.navList.map((item, i) => {
+          {GlobalNavList.map((item, i) => {
             return (
               <li
                 className={
-                  i < props.navList.length - 1 ? 'h-11 text-[17px] border-b border-[#424245]' : 'h-11 text-[17px]'
+                  i < GlobalNavList.length - 1 ? 'h-11 text-[17px] border-b border-[#424245]' : 'h-11 text-[17px]'
                 }
                 key={Math.random()}
               >
