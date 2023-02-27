@@ -34,7 +34,7 @@ const ColorsPrivacy = () => {
     <div
       ref={scrollRef}
       style={{ opacity: opacityValue + '%' }}
-      className={`max-w-[83.333%] ml-[8.333%] mr-auto text-[21px] font-semibold leading-[1.125] tracking-[0.231px] md:max-w-[50%] md:mx-auto lg:text-[32px]`}
+      className={`max-w-[83.333%] ml-[8.333%] mr-auto pb-[86px] text-[21px] font-semibold leading-[1.125] tracking-[0.231px] md:max-w-[50%] md:mx-auto md:pb-[103px] lg:pb-[135px] lg:text-[32px]`}
     >
       <p className='mb-4 md:mb-6'>Designed for durability.</p>
       <p>
