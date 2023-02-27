@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ColorOptions from './ColorOptions';
 import ColorsDevice from './ColorsDevice';
 import Description from './Description';
+import Privacy from './Privacy';
 
 const Colors = () => {
   const [color, setColor] = useState('Deep Purple');
@@ -14,6 +15,7 @@ const Colors = () => {
         <ColorsDevice color={color} />
       </div>
       <Description />
+      <Privacy />
     </div>
   );
 };
